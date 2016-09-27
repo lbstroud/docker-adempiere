@@ -1,7 +1,7 @@
 # Dockerfile for ADempiere 380 with PostgreSQL 9.4
 
 FROM ubuntu
-MAINTAINER victor.perez@e-evolution.com
+MAINTAINER lbstroud@lbstroud.com
 
 USER root
 
