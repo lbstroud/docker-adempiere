@@ -26,9 +26,8 @@ RUN apt-get update && apt-get install -y python-software-properties software-pro
 # after each ``apt-get``
 
 # Install Java.
-RUN \
+RUN add-apt-repository ppa:openjdk-r/ppa && \
   apt-get update && \
-  add-apt-repository ppa:openjdk-r/ppa && \
   apt-get install -y openjdk-7-jdk && \
   rm -rf /var/lib/apt/lists/*
 
